@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu Mono;
+  transition: all 0.2s ease-in-out, color 0.1s ease-in-out;
+}
+
+:root {
+  --color-primary: #f7f7f7;
+  --color-secondary: #212121;
+  --color-primary-rgb: 247, 247, 247;
+  --color-secondary-rgb: 33, 33, 3;
+}
+
+body {
+  background-image: url(./assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-secondary);
+}
+
+[theme="light"] {
+  --color-primary: #f7f7f7;
+  --color-secondary: #000000;
+  --color-accent: #ffdb2b;
+  --color-primary-rgb: 247, 247, 247;
+  --color-secondary-rgb: 33, 33, 3;
+}
+
+[theme="dark"] {
+  --color-primary: #212121;
+  --color-secondary: #fafafa;
+  --color-accent: #ccaf22;
+  --color-primary-rgb: 33, 33, 3;
+  --color-secondary-rgb: 247, 247, 247;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px;
+  background-color: var(--color-accent);
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: var(--box-shadow-active);
+  cursor: none;
+}
+
+.container {
+  margin: 0.5em;
+  font-size: 2em;
+}
