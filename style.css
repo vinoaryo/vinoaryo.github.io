@@ -4,7 +4,7 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: Ubuntu Mono;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: all 0.2s ease-in-out, color 0.1s ease-in-out;
 }
 
@@ -17,7 +17,9 @@ html {
 
 body {
   background-image: url(./assets/background.svg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   color: var(--color-secondary);
 }
