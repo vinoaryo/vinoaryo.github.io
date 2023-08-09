@@ -1,19 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 :root {
-  --text: #090101;
-  --background: #fffefe;
-  --primary: #4becec;
-  --secondary: #d1e5fa;
-  --accent: #18e780;
+  --text: #191815;
+  --background: #fefffe;
+  --primary: #34353d;
+  --secondary: #d6d0d7;
+  --accent: #656776;
+  --text-rgb: rgb(25, 24, 21);
+  --background-rgb: rgb(254, 255, 254);
+  --primary-rgb: rgb(52, 53, 61);
+  --secondary-rgb: rgb(214, 208, 215);
+  --accent-rgb: rgb(101, 103, 118);
 }
 
 [data-theme="dark"] {
-  --text: #fffefe;
-  --background: #212125;
-  --primary: #4becec;
-  --secondary: #05192e;
-  --accent: #74f1b3;
+  --text: #fafafa;
+  --background: #1d1d1d;
+  --primary: #34353d;
+  --secondary: #1b171c;
+  --accent: #adaeb8;
+  --text-rgb: rgb(250, 250, 250);
+  --background-rgb: rgb(29, 29, 29);
+  --primary-rgb: rgb(52, 53, 61);
+  --secondary-rgb: rgb(27, 23, 28);
+  --accent-rgb: rgb(173, 174, 184);
 }
 
 *,
@@ -26,7 +36,7 @@ html {
 
 body {
   background-color: var(--background);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 header {
@@ -37,14 +47,23 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  border-bottom: 1px solid var(--primary);
+}
+
 nav {
   display: flex;
   padding: 10px;
   justify-content: end;
+  /* box-shadow: 0px 1px 5px var(--primary-rgb, 0.1); */
 }
 
 nav li {
   list-style-type: none;
+}
+
+nav li a {
+  margin-right: 15px;
 }
 
 .theme {

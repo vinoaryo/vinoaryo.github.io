@@ -17,6 +17,8 @@ function changeTheme() {
 
 if (localStorage.getItem("theme") === "dark") {
   body.dataset.theme = "dark";
+  themeBtnIcon.classList.replace("fa-sun", "fa-moon");
 } else {
   body.dataset.theme = "";
+  themeBtnIcon.classList.replace("fa-moon", "fa-sun");
 }
