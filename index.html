@@ -12,8 +12,9 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    <script src="src/javascript/script.js" defer></script>
+    <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="shortcut icon" href="src/image/favicon.ico" type="image/x-icon">
     <title>VSpace</title>
   </head>
   <body data-theme>
@@ -27,7 +28,11 @@
       </ul>
     </nav>
     <header>
-      <h1 class="animate__animated animate__fadeInLeftBig">Hello, World!</h1>
+      <section id="home">
+        <h1 class="animate__animated animate__fadeInLeftBig">Hello, World!</h1>
+      </section>
+      <section id="about"></section>
+      <section id="contact"></section>
     </header>
     <div class="theme">
       <button id="themeBtn" onclick="changeTheme()">
